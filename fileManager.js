@@ -22,13 +22,20 @@ const fs = require("fs");
 // });
 
 
+// //update file
+// fs.appendFile("./text.txt","\nThis is updated file",(err)=>{
+//     if(err){
+//         console.log("Something went wrong");
+//     } else{
+//         console.log("File updated successfully");
+//     }
+// });
 
-
-//update file
-fs.appendFile("./text.txt","\nThis is updated file",(err)=>{
+//rename operation
+fs.rename("./text.txt","./text2.txt",(err)=>{
     if(err){
         console.log("Something went wrong");
     } else{
-        console.log("File updated successfully");
+        console.log("File renamed successfully");
     }
 });
