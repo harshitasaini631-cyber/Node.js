@@ -12,16 +12,23 @@ const fs = require("fs");
 //     }
 // });
 
-//write operation
-fs.writeFile("./text.txt","New written file",(err)=>{
+// //write operation
+// fs.writeFile("./text.txt","New written file",(err)=>{
+//     if(err){
+//         console.log("something went wrong");
+//     } else{
+//         console.log("File written successfully");
+//     }
+// });
+
+
+
+
+//update file
+fs.appendFile("./text.txt","\nThis is updated file",(err)=>{
     if(err){
-        console.log("something went wrong");
+        console.log("Something went wrong");
     } else{
-        console.log("File written successfully");
+        console.log("File updated successfully");
     }
 });
-
-
-
-
-
