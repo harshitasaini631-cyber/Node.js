@@ -16,6 +16,16 @@ function divide(x,y){
 function product(x,y){
     console.log(x*y);
 }
+function power(x,y){
+    console.log(x**y);
+}
+function remainder(x,y){
+    console.log(x%y);
+}
+function percentage(x,y){
+    console.log((x/y)*100);
+}
+
 
 if (ops=="add") {
     add(a, b);
@@ -25,4 +35,10 @@ if (ops=="add") {
     divide(a, b);
 } else if (ops=="product") {
     product(a, b);
+} else if(ops == "power"){
+    power(a,b)
+} else if(ops == "remainder"){
+    remainder(a,b)
+} else if(ops == "percentage"){
+    remainder(a,b)
 }
