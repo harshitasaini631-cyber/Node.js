@@ -11,7 +11,12 @@ function sub(x,y){
     console.log(x-y);
 }
 function divide(x,y){
-    console.log(x/y);
+    if(y==0){
+        console.log("Error.Cannot divide by zero");
+    } else{
+         console.log(x/y);
+    }
+    
 }
 function product(x,y){
     console.log(x*y);
@@ -41,4 +46,6 @@ if (ops=="add") {
     remainder(a,b)
 } else if(ops == "percentage"){
     remainder(a,b)
+} else{
+    console.log("Invalid operation")
 }
