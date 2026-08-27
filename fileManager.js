@@ -31,11 +31,20 @@ const fs = require("fs");
 //     }
 // });
 
-//rename operation
-fs.rename("./text.txt","./text2.txt",(err)=>{
+// //rename operation
+// fs.rename("./text.txt","./text2.txt",(err)=>{
+//     if(err){
+//         console.log("Something went wrong");
+//     } else{
+//         console.log("File renamed successfully");
+//     }
+// });
+
+//delete operation
+fs.unlink("./text.txt",(err)=>{
     if(err){
         console.log("Something went wrong");
     } else{
-        console.log("File renamed successfully");
+        console.log("File deleted successfully");
     }
 });
